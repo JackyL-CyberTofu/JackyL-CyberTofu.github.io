@@ -2,7 +2,7 @@
 import { Armata, Noto_Sans_Bassa_Vah } from 'next/font/google';
 
 const armata = Armata({ weight: "400", subsets: ['latin'] });
-const noto_sans_bassa_vah = Noto_Sans_Bassa_Vah();
+const noto_sans_bassa_vah = Noto_Sans_Bassa_Vah({ weight: "400", subsets: ['latin'] });
 
 export default function FrontPage() {
     return (
