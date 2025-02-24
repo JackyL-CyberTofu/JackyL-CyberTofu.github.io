@@ -22,14 +22,14 @@ export default function Navbar() {
             {/* Main navigation bar */}
             <nav className="">
                 <div className="max-w-screen-xl mx-auto p-4 flex items-center justify-between">
-                    <div className="flex items-center space-x-3">
+                    <div className="flex items-center space-x-3 ml-10">
                         <span className="text-2xl font-semibold dark:text-white">
-                          MySite
+                          Jacky Lim
                         </span>
                     </div>
 
                     {/* Hamburger button */}
-                    <button
+                    {/* <button
                         onClick={() => setIsOpen(!isOpen)}
                         aria-expanded={isOpen}
                         aria-controls="mobileMenu"
@@ -49,10 +49,10 @@ export default function Navbar() {
                                 d="M1 1h15M1 7h15M1 13h15"
                             />
                         </svg>
-                    </button>
+                    </button> */}
 
                     {/* Horizontal nav links */}
-                    <ul className="hidden md:flex md:space-x-8 font-medium">
+                    {/* <ul className="hidden md:flex md:space-x-8 font-medium">
                         <li>
                             <a href="#" className="px-3 py-2  dark:hover:bg-gray-700">
                                 Home
@@ -68,12 +68,12 @@ export default function Navbar() {
                                 Services
                             </a>
                         </li>
-                    </ul>
+                    </ul> */}
                 </div>
             </nav>
 
             {/* Mobile menu overlay */}
-            <div id="mobileMenu" className={MobileMenuCSS(isOpen)} style={{ willChange: 'transform, opacity' }}>
+            {/* <div id="mobileMenu" className={MobileMenuCSS(isOpen)} style={{ willChange: 'transform, opacity' }}>
                 <ul className="font-medium flex flex-col space-y-2 p-4">
                     <li>
                         <a href="#" className="block px-3 py-2">
@@ -94,7 +94,7 @@ export default function Navbar() {
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div> */}
         </>
     );
 }

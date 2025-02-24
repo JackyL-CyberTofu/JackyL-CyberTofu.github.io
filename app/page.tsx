@@ -1,30 +1,60 @@
+'use client'
 import React from "react";
 import FrontPage from "@/components/main/front_page";
 import InfoPage from "@/components/main/InfoPage";
-import SidebarIcons from "@/components/common/SidebarIcons";
+import ProjectPage from "@/components/main/ProjectPage";
+import ContactPage from "@/components/main/ContactPage";
+import AboutMe from "@/components/main/AboutMe";
+import SidebarNav from "@/components/common/SidebarNav"; // replaced SidebarIcons
+import useScrollFade from "@/hooks/useScrollFade";
 
 export default function MyPage() {
-    return (
-        <div className="relative min-h-screen flex">
+    const frontPageOpacity = useScrollFade("front-page", 200);
+    const infoPageOpacity = useScrollFade("info-page", 200);
+    const projectPageOpacity = useScrollFade("project-page", 200);
+    const contactPageOpacity = useScrollFade("contact-page", 200);
 
-            {/* Main Content */}
-            <div className="flex-1 overflow-y-auto">
-                {/* First container keeps its styles if you want FrontPage centered */}
-                <div className="min-h-screen flex items-center justify-center ml-8 mr-8">
+    return (
+        <div className="relative min-h-screen flex overflow-hidden">
+            {/* Fixed Sidebar */}
+            <SidebarNav />
+
+            {/* Main Content with left margin to avoid overlap */}
+            <div className="relative flex-1 overflow-y-auto z-10 ml-8">
+                {/* FrontPage */}
+                <div id="front-page" className={`min-h-screen flex items-center justify-center transition-opacity duration-500`}>
                     <FrontPage />
                 </div>
 
-                {/* Second container with fixed width */}
-                <div className="min-h-screen flex justify-center">
+                {/* AboutMePage */}
+                <div id="aboutme-page" className={`flex justify-center transition-opacity duration-500 bg-transparent py-12`}>
+                    <AboutMe />
+                </div>
+
+
+                {/* InfoPage */}
+                <div id="info-page" className={`flex justify-center transition-opacity duration-500 bg-transparent py-12`}>
                     <div className="w-full max-w-6xl">
                         <InfoPage />
                     </div>
                 </div>
 
-            </div>
+                {/* ProjectPage */}
+                <div id="project-page" className={`flex justify-center transition-opacity duration-500 bg-transparent py-12`}>
+                    <div className="w-full max-w-6xl">
+                        <ProjectPage />
+                    </div>
+                </div>
 
-            {/* Sidebar */}
-            <SidebarIcons/>
+                {/* ContactPage */}
+                <div id="contact-page" className={`flex justify-center transition-opacity duration-500 bg-transparent py-12`}>
+                    <div className="w-full max-w-6xl">
+                        <ContactPage />
+                    </div>
+                </div>
+
+                <div className="h-24"></div>
+            </div>
         </div>
     );
 }
