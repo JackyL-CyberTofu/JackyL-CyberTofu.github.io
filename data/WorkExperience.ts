@@ -21,28 +21,16 @@ export const workExperienceData: WorkExperience[] = [
         type: "education"
     },
     {
-        id: 2,
-        location: "Toronto, ON",
-        company: "AMD",
-        position: "Software Development Engineer",
-        period: "Apr 2025 - Aug 2026",
-        responsibilities: [
-            "Designed and implemented scalable cloud architectures on AWS",
-            "Reduced infrastructure costs by 25% through optimization and automation",
-            "Implemented robust disaster recovery and backup solutions",
-        ],
-        type: "work"
-    },
-    {
         id: 0,
         location: "Burnaby, BC",
         company: "Microchip Technology",
         position: "Software Engineer Intern",
         period: "Sep 2024 - Apr 2025",
         responsibilities: [
-            "Led a team of 5 developers in creating a new cloud-based platform",
-            "Implemented CI/CD pipelines, reducing deployment time by 40%",
-            "Mentored junior developers and conducted code reviews",
+            "Engineered critical Python software modules and validation tools to ensure compliance and address all stringent NASA JPL certification requirements for the HPSC (High Performance Space Computing) project.",
+            "Enhanced a Jenkins CI/CD pipeline for developer regression testing, improving feedback time by 50% and empowering developers by accelerating their iteration cycles and while reducing software defects.",
+            "Transformed firmware validation with C and C++ data transfer modules, integrated into 75% of validation tests.",
+            "Implemented PKCS11-based cryptographic operations, enabling secure key management and seamless Hardware Secure Module (HSM) integration for encryption and authentication.",
         ],
         type: "work"
     },
@@ -53,9 +41,9 @@ export const workExperienceData: WorkExperience[] = [
         position: "Software Developer in Test Intern",
         period: "Sep 2022 - Apr 2023",
         responsibilities: [
-            "Developed and maintained multiple web applications using React and Node.js",
-            "Optimized database queries, improving application performance by 30%",
-            "Collaborated with UX designers to implement responsive designs",
+            "Engineered efficient backend API testing workflows using JavaScript and Postman, boosting error detection by 25% and enhancing web application stability.",
+            "Developed robust UI automation frameworks with Katalon Studio and Java, drastically reducing the manual testing effort and demonstrably improving user experience (UX) by minimizing production bugs by 20%.",
+            "Developed and deployed MySQL database integration scripts using SQL, ensuring data integrity and minimizing data incidents.improving data reliability for user features and minimizing data-related incidents.",
         ],
         type: "work"
     },
